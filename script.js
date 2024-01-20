@@ -22,7 +22,7 @@ function show() {
             imgbox.classList.add("imgbox");
             let imgname=document.createElement("p");
             imgname.classList.add("imgname");
-            imgname.innerText=photo.alt_description;
+            imgname.innerText=photo.alt_description.slice(0,50);
 
             imgElement.setAttribute('src',photo.urls.full);
             imgElement.setAttribute("width","100px")
